@@ -1,5 +1,6 @@
 interface Car {
-  name: string;
+import { User } from '../../../../Downloads/maps/src/User';
+  readonly name: string;
   year: number;
   broken: boolean;
   summary(): string;
@@ -19,3 +20,19 @@ const printCar = (car: Car): void => {
 };
 
 printCar(oldCivic);
+
+interface Runnable {
+  value: string;
+}
+
+// one interface can extend other interfaces
+interface Readable extends Runnable {
+  isReadable: boolean;
+}
+
+class User implements Readable,Runnable{
+  value: string;
+  type?: string;
+  isReadable: boolean;
+
+}
