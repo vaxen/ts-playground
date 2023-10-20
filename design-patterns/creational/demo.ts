@@ -14,4 +14,5 @@ const tableVintage = new ConcreteVintageFactory().createTable();
 console.log(chairModern.sit());
 console.log(tableVintage.putObject());
 
+
  
