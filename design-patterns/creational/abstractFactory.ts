@@ -51,3 +51,9 @@ export class ConcreteModernFactory implements AbstractFurnitureFactory {
         return new ModernTable();
     }
 }
+
+//DEMO
+const chairModern : Chair = new ConcreteModernFactory().createChair();
+const tableVintage = new ConcreteVintageFactory().createTable();
+console.log(chairModern.sit());
+console.log(tableVintage.putObject());

@@ -67,3 +67,10 @@ export class Person {
     return this.address;
   }
 }
+
+//DEMO
+const person1 : Person = new PersonBuilder('Matt')
+                .withAddress('1234')
+                .withPhone('2344')
+                .withAge(44)
+                .build()
