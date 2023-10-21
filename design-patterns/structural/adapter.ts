@@ -23,3 +23,9 @@ export class SocketAdapter extends Socket {
 
 }
 
+//DEMO
+const euSocket = new EUSocket();
+const socketAdapter = new SocketAdapter(euSocket);
+
+socketAdapter.gainEnergy();
+
